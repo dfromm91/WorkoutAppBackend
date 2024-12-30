@@ -298,7 +298,7 @@ app.post("/users/register", async (req, res) => {
           },
         });
 
-        const validationUrl = `http://localhost:3000/users/validate/${validationToken}`;
+        const validationUrl = `https://workoutappbackend-oyyg.onrender.com/users/validate/${validationToken}`;
         const mailOptions = {
           from: process.env.EMAIL_SENDER,
           to: email,
